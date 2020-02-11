@@ -1,0 +1,16 @@
+name: flutter_amazon_s3
+description: A flutter plugin for using Amazon S3 service.
+version: 0.1.2
+author: DipDev Studio <info@dipdev.studio>
+homepage: https://git.dipdev.studio/open-source/flutter/AmazonS3
+
+environment:
+  sdk: ">=2.0.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+flutter:
+  plugin:
+    androidPackage: studio.dipdev.flutter.amazon.s3
+    pluginClass: FlutterAmazonS3Plugin

@@ -1,0 +1,27 @@
+name: flutter_amazon_s3_example
+description: Demonstrates how to use the flutter_amazon_s3 plugin.
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_amazon_s3:
+    path: ../
+
+flutter:
+
+  plugin:
+    androidPackage: com.flutteramazons3
+    pluginClass: FlutterAmazonS3Plugin
+
+  uses-material-design: true
