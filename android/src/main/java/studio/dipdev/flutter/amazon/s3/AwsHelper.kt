@@ -37,7 +37,7 @@ class AwsHelper(private val context: Context, private val onUploadCompleteListen
         get() = getUploadedUrl(nameOfUploadedFile)
 
     private fun getUploadedUrl(key: String?): String {
-        return String.format(Locale.getDefault(), URL_TEMPLATE, BUCKET_NAME, key)
+        return String.format(Locale.getDefault(), URL_TEMPLATE_BUCKET,REGION, BUCKET_NAME, key)
     }
 
     @Throws(UnsupportedEncodingException::class)
@@ -82,5 +82,6 @@ class AwsHelper(private val context: Context, private val onUploadCompleteListen
     companion object {
         private val TAG = AwsHelper::class.java.simpleName
         private const val URL_TEMPLATE = "https://s3.amazonaws.com/%s/%s"
+        private const val URL_TEMPLATE_BUCKET = "https://s3-%s.amazonaws.com/%s/%s"
     }
 }
