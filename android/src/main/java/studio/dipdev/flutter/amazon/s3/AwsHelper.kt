@@ -82,6 +82,6 @@ class AwsHelper(private val context: Context, private val onUploadCompleteListen
     companion object {
         private val TAG = AwsHelper::class.java.simpleName
         private const val URL_TEMPLATE = "https://s3.amazonaws.com/%s/%s"
-        private const val URL_TEMPLATE_BUCKET = "https://s3-%s.amazonaws.com/%s/%s"
+        private const val URL_TEMPLATE_BUCKET = "https://s3.%s.amazonaws.com/%s/%s"
     }
 }
