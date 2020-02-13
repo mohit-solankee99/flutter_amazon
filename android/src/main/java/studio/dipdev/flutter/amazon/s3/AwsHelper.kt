@@ -71,7 +71,7 @@ class AwsHelper(private val context: Context, private val onUploadCompleteListen
 
     @Throws(UnsupportedEncodingException::class)
     fun clean(filePath: String): String {
-        return filePath.replace("[^A-Za-z0-9 ]".toRegex(), "")
+        return filePath
     }
 
     interface OnUploadCompleteListener {
